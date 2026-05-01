@@ -19,14 +19,14 @@ const Navbar = () => {
           {/* LOGO */}
           <Link href="/" className="text-orange-500 text-2xl flex gap-2 font-bold items-center">
             <FaShoppingCart />
-            <h2>Sun<span className="text-gray-800">Cart</span></h2>
+            <h2>Sun<span className="text-gray-500">Cart</span></h2>
           </Link>
 
           {/* DESKTOP MENU */}
           <div className="hidden md:flex items-center gap-10 font-medium">
             <Link href="/" className="text-orange-500 border-b-2 border-orange-500 pb-1">Home</Link>
-            <Link href="/products" className="text-gray-800 hover:text-orange-500">Products</Link>
-            <Link href="/profile" className="text-gray-800 hover:text-orange-500">Profile</Link>
+            <Link href="/products" className="text-gray-900 hover:text-orange-500">Products</Link>
+            <Link href="/profile" className="text-gray-900 hover:text-orange-500">Profile</Link>
           </div>
 
           {/* RIGHT SIDE */}
