@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import { FaArrowRightLong } from 'react-icons/fa6';
 
 const Banner = () => {
     return (
@@ -22,19 +23,26 @@ const Banner = () => {
 
         <div className="max-w-xl text-white">
 
-          {/* Badge */}
-          <span className="
-            inline-block
-            bg-yellow-400
-            text-black
-            text-xs
-            font-semibold
-            px-4 py-1
-            rounded-full
-            mb-6
-          ">
-            HOT SUMMER DEAL
-          </span>
+      {/* Badge */}
+            <span
+            className="
+                inline-flex
+                items-center
+                gap-2
+                 bg-yellow-400
+                 text-black
+                 text-xs
+                font-semibold
+                px-4
+                py-2
+                rounded-full
+                mb-6
+                uppercase
+            "
+            >
+            <FaArrowRightLong className="text-sm" />
+            Curated Essentials
+            </span>
 
           {/* Heading */}
           <h1 className="text-5xl md:text-6xl font-bold leading-tight">
