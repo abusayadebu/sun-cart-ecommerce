@@ -4,7 +4,18 @@ import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 
 const ProductCard = ({ product }) => {
-  const { name, price, rating, description, image } = product;
+  const { name, price, rating, description, image, brand, category } = product;
+
+  // Conditional badge color
+  const badgeColors = {
+    Sunglasses: "bg-orange-100 text-orange-500",
+    Outfits: "bg-blue-100 text-blue-500",
+    Skincare: "bg-green-100 text-green-500",
+    Accessories: "bg-purple-100 text-purple-500",
+    Footwear: "bg-yellow-100 text-yellow-600",
+    Beauty: "bg-pink-100 text-pink-500",
+    Furniture: "bg-gray-200 text-gray-700",
+  };
 
   return (
     <div className="bg-[#f3f3f3] rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 w-full max-w-sm mx-auto">
@@ -19,9 +30,13 @@ const ProductCard = ({ product }) => {
           className="w-full h-[320px] object-cover rounded-2xl"
         />
 
-        {/* NEW Badge */}
-        <span className="absolute top-4 right-4 bg-white text-orange-400 font-semibold text-sm px-4 py-1 rounded-full shadow">
-          NEW
+         {/* Badge */}
+        <span
+          className={`absolute top-4 right-4 font-semibold text-sm px-4 py-1 rounded-full shadow ${
+            badgeColors[category] || "bg-white text-orange-500"
+          }`}
+        >
+          {category}
         </span>
       </div>
 

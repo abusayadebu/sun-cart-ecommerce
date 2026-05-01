@@ -25,7 +25,7 @@ const Navbar = () => {
           {/* DESKTOP MENU */}
           <div className="hidden md:flex items-center gap-10 font-medium">
             <Link href="/" className="text-orange-500 border-b-2 border-orange-500 pb-1">Home</Link>
-            <Link href="/products" className="text-gray-900 hover:text-orange-500">Products</Link>
+            <Link href="/all-products" className="text-gray-900 hover:text-orange-500">Products</Link>
             <Link href="/profile" className="text-gray-900 hover:text-orange-500">Profile</Link>
           </div>
 
@@ -58,9 +58,9 @@ const Navbar = () => {
               hidden
               peer-checked:flex
             ">
-              <Link href="/" className="text-orange-500">Home</Link>
-              <Link href="/products">Products</Link>
-              <Link href="/profile">My Profile</Link>
+              <Link href={"/"} className="text-orange-500">Home</Link>
+              <Link href={"/all-products"}>Products</Link>
+              <Link href={"/profile"}>My Profile</Link>
 
               <div className="flex gap-5 pt-3">
                 <FaSearch />
