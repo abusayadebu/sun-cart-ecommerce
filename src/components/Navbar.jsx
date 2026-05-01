@@ -1,0 +1,82 @@
+"use client";
+import Link from "next/link";
+import {
+  FaShoppingCart,
+  FaSearch,
+  FaShoppingBag,
+  FaBars,
+  FaTimes,
+} from "react-icons/fa";
+
+const Navbar = () => {
+  return (
+    <nav className="fixed top-0 left-0 w-full z-50 flex justify-center pt-4">
+      
+      <div className="w-[95%] max-w-7xl rounded-2xl px-6 backdrop-blur-2xl bg-white/10 border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
+
+        <div className="flex items-center justify-between h-16">
+
+          {/* LOGO */}
+          <Link href="/" className="text-orange-500 text-2xl flex gap-2 font-bold items-center">
+            <FaShoppingCart />
+            <h2>Sun<span className="text-gray-800">Cart</span></h2>
+          </Link>
+
+          {/* DESKTOP MENU */}
+          <div className="hidden md:flex items-center gap-10 font-medium">
+            <Link href="/" className="text-orange-500 border-b-2 border-orange-500 pb-1">Home</Link>
+            <Link href="/products" className="text-gray-800 hover:text-orange-500">Products</Link>
+            <Link href="/profile" className="text-gray-800 hover:text-orange-500">Profile</Link>
+          </div>
+
+          {/* RIGHT SIDE */}
+          <div className="hidden md:flex items-center gap-6">
+            <FaSearch />
+            <FaShoppingBag />
+            <button className="px-6 py-2 rounded-full bg-orange-500 text-white hover:bg-orange-600">
+              Signup
+            </button>
+          </div>
+
+          {/* MOBILE MENU TOGGLE (HIDDEN CHECKBOX) */}
+          <label className="md:hidden cursor-pointer text-xl">
+            <input type="checkbox" className="peer hidden" />
+            <FaBars className="peer-checked:hidden" />
+            <FaTimes className="hidden peer-checked:block" />
+
+            {/* MOBILE MENU */}
+            <div className="
+              absolute left-1/2 -translate-x-1/2 top-20
+              w-[95%] max-w-7xl
+              rounded-2xl
+              backdrop-blur-2xl
+              bg-white/10
+              border border-white/20
+              shadow-lg
+              flex flex-col gap-4
+              p-6
+              hidden
+              peer-checked:flex
+            ">
+              <Link href="/" className="text-orange-500">Home</Link>
+              <Link href="/products">Products</Link>
+              <Link href="/profile">My Profile</Link>
+
+              <div className="flex gap-5 pt-3">
+                <FaSearch />
+                <FaShoppingBag />
+              </div>
+
+              <button className="px-6 py-2 rounded-full bg-orange-500 text-white w-fit">
+                Signup
+              </button>
+            </div>
+          </label>
+
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
