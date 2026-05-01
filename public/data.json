@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Amber Aviator Lux",
+    "brand": "SunVibe",
+    "price": 245,
+    "rating": 4.8,
+    "stock": 12,
+    "description": "Premium aviator sunglasses with amber tint for a bold summer look.",
+    "image": "https://i.postimg.cc/amber-aviator.png",
+    "category": "Sunglasses"
+  },
+  {
+    "id": 2,
+    "name": "Breezy Linen Set",
+    "brand": "Coastal Wear",
+    "price": 189,
+    "rating": 4.6,
+    "stock": 18,
+    "description": "Lightweight linen outfit designed for ultimate summer comfort.",
+    "image": "https://i.postimg.cc/linen-set.png",
+    "category": "Outfits"
+  },
+  {
+    "id": 3,
+    "name": "Ocean Glow Serum",
+    "brand": "AquaSkin",
+    "price": 75,
+    "rating": 4.7,
+    "stock": 25,
+    "description": "Hydrating serum that gives your skin a radiant summer glow.",
+    "image": "https://i.postimg.cc/ocean-serum.png",
+    "category": "Skincare"
+  },
+  {
+    "id": 4,
+    "name": "Riviera Straw Tote",
+    "brand": "BeachStyle",
+    "price": 95,
+    "rating": 4.5,
+    "stock": 20,
+    "description": "Handwoven straw tote bag perfect for beach days.",
+    "image": "https://i.postimg.cc/straw-tote.png",
+    "category": "Accessories"
+  },
+  {
+    "id": 5,
+    "name": "Classic Villa Shirt",
+    "brand": "Urban Coast",
+    "price": 120,
+    "rating": 4.4,
+    "stock": 15,
+    "description": "Relaxed-fit shirt with a classic summer villa aesthetic.",
+    "image": "https://i.postimg.cc/villa-shirt.png",
+    "category": "Outfits"
+  },
+  {
+    "id": 6,
+    "name": "Solar Shield Mist",
+    "brand": "DermaSun",
+    "price": 55,
+    "rating": 4.6,
+    "stock": 30,
+    "description": "Refreshing SPF mist to protect your skin under the sun.",
+    "image": "https://i.postimg.cc/solar-mist.png",
+    "category": "Skincare"
+  },
+  {
+    "id": 7,
+    "name": "Golden Sand Slides",
+    "brand": "StepEase",
+    "price": 65,
+    "rating": 4.3,
+    "stock": 22,
+    "description": "Comfortable summer slides inspired by sandy beach tones.",
+    "image": "https://i.postimg.cc/sand-slides.png",
+    "category": "Footwear"
+  },
+  {
+    "id": 8,
+    "name": "Lagoon Breeze Hat",
+    "brand": "SunCover",
+    "price": 40,
+    "rating": 4.5,
+    "stock": 28,
+    "description": "Wide-brim hat designed to keep you cool and shaded.",
+    "image": "https://i.postimg.cc/breeze-hat.png",
+    "category": "Accessories"
+  },
+  {
+    "id": 9,
+    "name": "Tropical Escape Perfume",
+    "brand": "AromaBay",
+    "price": 85,
+    "rating": 4.7,
+    "stock": 14,
+    "description": "Fresh tropical fragrance that captures summer vibes.",
+    "image": "https://i.postimg.cc/tropical-perfume.png",
+    "category": "Beauty"
+  },
+  {
+    "id": 10,
+    "name": "Seaside Lounge Chair",
+    "brand": "RelaxCo",
+    "price": 210,
+    "rating": 4.6,
+    "stock": 10,
+    "description": "Minimal wooden lounge chair perfect for sunny relaxation.",
+    "image": "https://i.postimg.cc/lounge-chair.png",
+    "category": "Furniture"
+  }
+]
