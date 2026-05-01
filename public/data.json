@@ -6,8 +6,8 @@
     "price": 245,
     "rating": 4.8,
     "stock": 12,
-    "description": "Premium aviator sunglasses with amber tint for a bold summer look.",
-    "image": "https://i.postimg.cc/amber-aviator.png",
+    "description": "Premium aviator sunglasses crafted with a sleek golden frame and amber-tinted lenses. Designed to provide UV protection while adding a bold and timeless summer fashion statement to every outdoor look.",
+    "image": "https://i.ibb.co.com/yFZ62V9m/sunglass.png",
     "category": "Sunglasses"
   },
   {
@@ -17,8 +17,8 @@
     "price": 189,
     "rating": 4.6,
     "stock": 18,
-    "description": "Lightweight linen outfit designed for ultimate summer comfort.",
-    "image": "https://i.postimg.cc/linen-set.png",
+    "description": "A lightweight and breathable linen outfit set tailored for maximum comfort during hot summer days. Perfect for beach vacations, casual brunches, or effortless resort-style elegance.",
+    "image": "https://i.ibb.co.com/wNMKn2p8/linen.png",
     "category": "Outfits"
   },
   {
@@ -28,19 +28,19 @@
     "price": 75,
     "rating": 4.7,
     "stock": 25,
-    "description": "Hydrating serum that gives your skin a radiant summer glow.",
-    "image": "https://i.postimg.cc/ocean-serum.png",
+    "description": "Hydrating facial serum enriched with refreshing marine extracts to deeply nourish the skin. Leaves your face smooth, radiant, and naturally glowing throughout the sunny season.",
+    "image": "https://i.ibb.co.com/qYLTGQhf/serum.png",
     "category": "Skincare"
   },
   {
     "id": 4,
-    "name": "Riviera Straw Tote",
+    "name": "Riviera Tote Bag",
     "brand": "BeachStyle",
     "price": 95,
     "rating": 4.5,
     "stock": 20,
-    "description": "Handwoven straw tote bag perfect for beach days.",
-    "image": "https://i.postimg.cc/straw-tote.png",
+    "description": "Elegant handwoven tote bag designed for stylish beach escapes and everyday summer outings. Spacious interior and durable structure make it both fashionable and practical.",
+    "image": "https://i.ibb.co.com/rfXYK7F6/bag.png",
     "category": "Accessories"
   },
   {
@@ -50,8 +50,8 @@
     "price": 120,
     "rating": 4.4,
     "stock": 15,
-    "description": "Relaxed-fit shirt with a classic summer villa aesthetic.",
-    "image": "https://i.postimg.cc/villa-shirt.png",
+    "description": "Relaxed-fit premium shirt inspired by Mediterranean villa aesthetics. Soft fabric, airy comfort, and timeless styling make it ideal for warm evenings and luxury casual wear.",
+    "image": "https://i.ibb.co.com/d01tr9Dz/shirt.png",
     "category": "Outfits"
   },
   {
@@ -61,8 +61,8 @@
     "price": 55,
     "rating": 4.6,
     "stock": 30,
-    "description": "Refreshing SPF mist to protect your skin under the sun.",
-    "image": "https://i.postimg.cc/solar-mist.png",
+    "description": "Refreshing SPF protection mist created to shield your skin from harmful sun rays. Lightweight, non-sticky formula keeps you protected while feeling cool and fresh.",
+    "image": "https://i.ibb.co.com/XfHyny8G/towel.png",
     "category": "Skincare"
   },
   {
@@ -72,8 +72,8 @@
     "price": 65,
     "rating": 4.3,
     "stock": 22,
-    "description": "Comfortable summer slides inspired by sandy beach tones.",
-    "image": "https://i.postimg.cc/sand-slides.png",
+    "description": "Comfortable slip-on summer slides inspired by warm sandy beach tones. Cushioned soles and modern design make them perfect for poolside walks or daily casual wear.",
+    "image": "https://i.ibb.co.com/JXYNNr2/sand.png",
     "category": "Footwear"
   },
   {
@@ -83,8 +83,8 @@
     "price": 40,
     "rating": 4.5,
     "stock": 28,
-    "description": "Wide-brim hat designed to keep you cool and shaded.",
-    "image": "https://i.postimg.cc/breeze-hat.png",
+    "description": "Wide-brim summer hat made to keep you shaded and stylish under the sun. Lightweight and breathable material ensures comfort during travel, beach days, or outdoor events.",
+    "image": "https://i.ibb.co.com/nqytyD4W/glass.png",
     "category": "Accessories"
   },
   {
@@ -94,8 +94,8 @@
     "price": 85,
     "rating": 4.7,
     "stock": 14,
-    "description": "Fresh tropical fragrance that captures summer vibes.",
-    "image": "https://i.postimg.cc/tropical-perfume.png",
+    "description": "Fresh tropical fragrance blending citrus, coconut, and floral notes to capture the feeling of a luxurious island getaway. Long-lasting scent for day or evening wear.",
+    "image": "https://i.ibb.co.com/LD1XQKDG/tropical.png",
     "category": "Beauty"
   },
   {
@@ -105,8 +105,8 @@
     "price": 210,
     "rating": 4.6,
     "stock": 10,
-    "description": "Minimal wooden lounge chair perfect for sunny relaxation.",
-    "image": "https://i.postimg.cc/lounge-chair.png",
+    "description": "Minimal wooden lounge chair designed for stylish relaxation in sunny spaces. Durable craftsmanship and modern comfort make it ideal for patios, balconies, or beach homes.",
+    "image": "https://i.ibb.co.com/LXkTjKZN/classic.png",
     "category": "Furniture"
   }
 ]
