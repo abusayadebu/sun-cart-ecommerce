@@ -5,7 +5,7 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 const AllProductsPage = async () => {
     const res = await fetch('https://sun-cart-ecommerce.vercel.app/data.json')
     const products = await res.json()
-    console.log(products);
+    
     return (
         <div className='max-w-7xl mx-auto mt-25'>
              {/* Badge */}

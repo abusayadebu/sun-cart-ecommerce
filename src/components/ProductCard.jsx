@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { FaStar } from "react-icons/fa";
 
 const ProductCard = ({ product }) => {
@@ -63,9 +64,9 @@ const ProductCard = ({ product }) => {
             ${price}.00
           </h3>
 
-          <button className="text-[#9b6a00] text-lg font-semibold hover:underline">
+         <Link href={`/all-products/${product.id}`} className="text-[#9b6a00] text-lg font-semibold hover:underline">
             View Details
-          </button>
+         </Link>
         </div>
       </div>
     </div>
