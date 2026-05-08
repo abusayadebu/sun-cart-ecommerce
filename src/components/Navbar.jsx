@@ -33,9 +33,9 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-6">
             <FaSearch />
             <FaShoppingBag />
-            <button className="px-6 py-2 rounded-full bg-orange-500 text-white hover:bg-orange-600">
-              Signup
-            </button>
+            <Link href={"/register"} className="px-6 py-2 rounded-full bg-orange-500 text-white w-fit">
+                Register Now
+              </Link>
           </div>
 
           {/* MOBILE MENU TOGGLE (HIDDEN CHECKBOX) */}
@@ -67,9 +67,9 @@ const Navbar = () => {
                 <FaShoppingBag />
               </div>
 
-              <button className="px-6 py-2 rounded-full bg-orange-500 text-white w-fit">
-                Signup
-              </button>
+              <Link href={"/register"} className="px-6 py-2 rounded-full bg-orange-500 text-white w-fit">
+                Register Now
+              </Link>
             </div>
           </label>
 
