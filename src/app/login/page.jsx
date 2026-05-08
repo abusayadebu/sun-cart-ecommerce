@@ -5,6 +5,8 @@ import {Check} from "@gravity-ui/icons";
 import {Button, Card, Description, FieldError, Form, Input, Label, TextField} from "@heroui/react";
 import { authClient } from "@/lib/auth-client";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { GrGoogle } from "react-icons/gr";
+import Link from "next/link";
 
 const LoginPage = () => {
     const onSubmit = async(e) =>{
@@ -25,6 +27,13 @@ const LoginPage = () => {
         console.log(data, error);
 
     } 
+
+    // goggle sign in function
+    const handleGoogleLogin = async () => {
+        const data = await authClient.signIn.social({
+            provider: "google",
+        });
+    }
 
   return (
     <Card className="border mx-auto w-125 py-10 mb-20 mt-25">
@@ -103,6 +112,19 @@ const LoginPage = () => {
                 Login
               </Button>
             </div>
+            <p className="flex justify-center">or continue with</p>
+             <Button onClick={handleGoogleLogin} className="text-lg" variant="outline" fullWidth>
+                <GrGoogle></GrGoogle>
+                Login with Google
+              </Button>
+
+              {/* if not account */}
+              <div className="flex items-center gap-4 justify-center mt-2">
+                <p className="text-gray-500">Don't have an Account?</p>
+                <Link href={"/register"} className="text-orange-400 font-semibold">
+                Register
+              </Link>
+              </div>
           </Form>
     
     

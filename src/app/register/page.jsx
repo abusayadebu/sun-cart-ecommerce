@@ -6,6 +6,7 @@ import {Button, Card, Description, FieldError, Form, Input, Label, TextField} fr
 import { authClient } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
 import { FaArrowRightLong } from "react-icons/fa6";
+import Link from "next/link";
 
 const RegisterPage = () => {
     const router = useRouter()
@@ -126,6 +127,14 @@ const RegisterPage = () => {
             Register Now
           </Button>
         </div>
+
+        {/* if not account */}
+              <div className="flex items-center gap-4 justify-center mt-2">
+                <p className="text-gray-500">Already have an Account?</p>
+                <Link href={"/login"} className="text-orange-400 font-semibold">
+                Login
+              </Link>
+              </div>
       </Form>
 
 
