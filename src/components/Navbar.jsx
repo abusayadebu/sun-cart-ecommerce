@@ -1,4 +1,6 @@
 "use client";
+import { authClient } from "@/lib/auth-client";
+import { Avatar, Button } from "@heroui/react";
 import Link from "next/link";
 import {
   FaShoppingCart,
@@ -9,6 +11,16 @@ import {
 } from "react-icons/fa";
 
 const Navbar = () => {
+  // catch the user
+  const userData = authClient.useSession();
+  const user = userData.data?.user;
+
+  // logout function
+  const handleLogOut = async () =>{
+    await authClient.signOut();
+  }
+
+
   return (
     <nav className="fixed top-0 left-0 w-full z-50 flex justify-center">
       
@@ -30,12 +42,35 @@ const Navbar = () => {
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="hidden md:flex items-center gap-6">
-            <FaSearch />
+          <div className="">
+            {/* if user is not */}
+            {
+              !user && <ul className="flex md:flex items-center gap-6">
+                <FaSearch />
             <FaShoppingBag />
-            <Link href={"/register"} className="px-6 py-2 rounded-full bg-orange-500 text-white w-fit">
-                Register Now
+            <Link href={"/login"} className="px-6 py-2 rounded-full bg-orange-500 text-white w-fit font-semibold">
+                Login
               </Link>
+              </ul>
+            }
+
+
+            {/* if user have */}
+            {
+              user && <div className="flex items-center gap-3 font-semibold">
+                <Avatar>
+        <Avatar.Image alt={user?.name} src={user?.image} 
+        referrerPolicy="no-referrer"
+        />
+        <Avatar.Fallback className="font-bold">{user?.name[0]}</Avatar.Fallback>
+      </Avatar>
+
+      {/* sign out */}
+      <button onClick={handleLogOut} className="cursor-pointer px-6 py-2 rounded-full bg-orange-500 text-white w-fit">Logout</button>
+              </div>
+            }
+
+
           </div>
 
           {/* MOBILE MENU TOGGLE (HIDDEN CHECKBOX) */}
@@ -50,7 +85,7 @@ const Navbar = () => {
               w-[95%] max-w-7xl
               rounded-2xl
               backdrop-blur-2xl
-              bg-white/10
+              bg-orange-400/30
               border border-white/20
               shadow-lg
               flex flex-col gap-4
