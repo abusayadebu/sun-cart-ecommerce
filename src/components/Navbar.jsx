@@ -2,6 +2,7 @@
 import { authClient } from "@/lib/auth-client";
 import { Avatar, Button } from "@heroui/react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   FaShoppingCart,
   FaSearch,
@@ -11,6 +12,8 @@ import {
 } from "react-icons/fa";
 
 const Navbar = () => {
+    const pathname = usePathname();
+
   // catch the user
   const userData = authClient.useSession();
   const user = userData.data?.user;
@@ -36,9 +39,21 @@ const Navbar = () => {
 
           {/* DESKTOP MENU */}
           <div className="hidden md:flex items-center gap-10 font-medium">
-            <Link href="/" className="text-orange-500 border-b-2 border-orange-500 pb-1">Home</Link>
-            <Link href="/all-products" className="text-gray-900 hover:text-orange-500">Products</Link>
-            <Link href="/profile" className="text-gray-900 hover:text-orange-500">My Profile</Link>
+            <Link href="/" className={`${
+    pathname === "/"
+      ? "text-orange-400 border-orange-400 pb-1 border-b-2"
+      : "text-black hover:text-orange-400"
+  }`}>Home</Link>
+            <Link href="/all-products" className={`${
+    pathname === "/all-products"
+      ? "text-orange-400 border-orange-400 pb-1 border-b-2"
+      : "text-black hover:text-orange-400"
+  }`}>Products</Link>
+            <Link href="/profile" className={`${
+    pathname === "/profile"
+      ? "text-orange-400 border-orange-400 pb-1 border-b-2"
+      : "text-black hover:text-orange-400"
+  }`}>My Profile</Link>
           </div>
 
           {/* RIGHT SIDE */}
@@ -84,8 +99,7 @@ const Navbar = () => {
               absolute left-1/2 -translate-x-1/2 top-20
               w-[95%] max-w-7xl
               rounded-2xl
-              backdrop-blur-2xl
-              bg-orange-400/30
+              bg-orange-400
               border border-white/20
               shadow-lg
               flex flex-col gap-4
@@ -93,18 +107,26 @@ const Navbar = () => {
               hidden
               peer-checked:flex
             ">
-              <Link href={"/"} className="text-orange-500">Home</Link>
-              <Link href={"/all-products"}>Products</Link>
-              <Link href={"/profile"}>My Profile</Link>
+              <Link href={"/"} className={`${
+                pathname === "/"
+                  ? "text-orange-400 border-orange-400"
+                  : "text-black hover:text-orange-400"
+              }`}>Home</Link>
+              <Link href={"/all-products"} className={`${
+              pathname === "/all-products"
+                ? "text-orange-400 border-orange-400"
+                : "text-black hover:text-orange-400"
+            }`}>Products</Link>
+              <Link href={"/profile"} className={`${
+    pathname === "/profile"
+      ? "text-orange-400 border-orange-400"
+      : "text-black hover:text-orange-400"
+  }`}>My Profile</Link>
 
               <div className="flex gap-5 pt-3">
                 <FaSearch />
                 <FaShoppingBag />
               </div>
-
-              <Link href={"/register"} className="px-6 py-2 rounded-full bg-orange-500 text-white w-fit">
-                Register Now
-              </Link>
             </div>
           </label>
 

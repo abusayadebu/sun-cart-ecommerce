@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { FaArrowRightLong } from 'react-icons/fa6';
 
@@ -36,7 +37,7 @@ const Banner = () => {
                 px-4
                 py-2
                 rounded-full
-                mb-6
+                mb-6Link
                 uppercase
             "
             >
@@ -62,7 +63,7 @@ const Banner = () => {
           {/* Buttons */}
           <div className="flex gap-4 mt-8 flex-wrap">
 
-            <button className="
+            <Link href={"/all-products"} className="
               bg-orange-500
               hover:bg-orange-600
               text-white
@@ -72,7 +73,7 @@ const Banner = () => {
               transition
             ">
               Start Shopping
-            </button>
+            </Link>
 
             <button className="
               border border-white/50
