@@ -38,7 +38,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-10 font-medium">
             <Link href="/" className="text-orange-500 border-b-2 border-orange-500 pb-1">Home</Link>
             <Link href="/all-products" className="text-gray-900 hover:text-orange-500">Products</Link>
-            <Link href="/profile" className="text-gray-900 hover:text-orange-500">Profile</Link>
+            <Link href="/profile" className="text-gray-900 hover:text-orange-500">My Profile</Link>
           </div>
 
           {/* RIGHT SIDE */}
