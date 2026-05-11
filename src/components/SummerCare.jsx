@@ -27,12 +27,12 @@ const SummerCare = () => {
                 </span>
 
         {/* Heading */}
-        <div className="text-center">
-          <h2 className="text-[28px] sm:text-[40px] lg:text-[52px] font-bold uppercase text-[#231F1C] tracking-[-1px] leading-tight">
+        <div>
+          <h2 className="text-4xl font-bold mb-5 text-gray-900">
             Expert Summer Care Guide
           </h2>
 
-          <p className="mt-5 text-[#726961] text-[15px] sm:text-[17px] leading-[1.9] max-w-2xl mx-auto">
+          <p className="text-[#726961] text-[15px] sm:text-[17px] leading-[1.9] max-w-2xl">
             Protect your glow and maintain your style with our professional tips for the sunny season and stay radiant, confident, and protected.
           </p>
         </div>
@@ -41,7 +41,7 @@ const SummerCare = () => {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
           
           {/* Card 1 */}
-          <div className="bg-[#F8F8F8] rounded-[34px] px-8 py-14 text-center min-h-[390px] flex flex-col items-center justify-start">
+          <div className="bg-[#F8F8F8] rounded-[34px] p-4 text-center min-h-[390px] flex flex-col items-center justify-center">
             
             {/* Icon Circle */}
             <div className="w-[78px] h-[78px] rounded-full bg-[#F7E6C8] flex items-center justify-center">
@@ -49,19 +49,19 @@ const SummerCare = () => {
             </div>
 
             {/* Title */}
-            <h3 className="mt-8 text-[24px] sm:text-[32px] font-extrabold text-[#231F1C] tracking-[-0.5px]">
+            <h3 className="mt-8 text-2xl font-bold text-[#1f1f1f]">
               Pure Hydration
             </h3>
 
             {/* Description */}
-            <p className="mt-4 text-[#7A716A] text-[17px] leading-[2] font-medium max-w-[240px]">
+            <p className="mt-4 text-[#7A716A] leading-[2] max-w-[280px]">
               Drink 3+ liters of mineral water daily to keep your skin luminous
               and energy high.
             </p>
           </div>
 
           {/* Center Highlight Card */}
-          <div className="bg-[#FF5A00] rounded-[34px] px-8 py-14 text-center min-h-[390px] flex flex-col items-center justify-start shadow-sm">
+          <div className="bg-[#FF5A00] rounded-[34px] p-4 text-center min-h-[390px] flex flex-col items-center justify-center shadow-sm">
             
             {/* Icon Circle */}
             <div className="w-[78px] h-[78px] rounded-full bg-[#FF7A2C] flex items-center justify-center">
@@ -69,19 +69,19 @@ const SummerCare = () => {
             </div>
 
             {/* Title */}
-            <h3 className="mt-8 text-[24px] sm:text-[32px] font-extrabold text-white tracking-[-0.5px]">
+            <h3 className="mt-8 text-2xl font-bold font-bold text-white tracking-[-0.5px]">
               Total SPF Shield
             </h3>
 
             {/* Description */}
-            <p className="mt-4 text-[#FFE2D0] text-[17px] leading-[2] font-medium max-w-[250px]">
+            <p className="mt-4 text-[#FFE2D0] text-[17px] leading-[2] font-medium max-w-[280px]">
               Reapply broad-spectrum SPF 50 every two hours for comprehensive
               luxury skin protection.
             </p>
           </div>
 
           {/* Card 3 */}
-          <div className="bg-[#F8F8F8] rounded-[34px] px-8 py-14 text-center min-h-[390px] flex flex-col items-center justify-start">
+          <div className="bg-[#F8F8F8] rounded-[34px] p-4 text-center min-h-[390px] flex flex-col items-center justify-center">
             
             {/* Icon Circle */}
             <div className="w-[78px] h-[78px] rounded-full bg-[#F7E6C8] flex items-center justify-center">
@@ -89,12 +89,12 @@ const SummerCare = () => {
             </div>
 
             {/* Title */}
-            <h3 className="mt-8 text-[24px] sm:text-[32px] font-extrabold text-[#231F1C] tracking-[-0.5px]">
+            <h3 className="mt-8 text-2xl font-bold text-[#231F1C] tracking-[-0.5px]">
               Vision Guard
             </h3>
 
             {/* Description */}
-            <p className="mt-4 text-[#7A716A] text-[17px] leading-[2] font-medium max-w-[250px]">
+            <p className="mt-4 text-[#7A716A] text-[17px] leading-[2] font-medium max-w-[280px]">
               Ensure your eyewear is UV-rated to protect your eyes from intense
               coastal glare.
             </p>

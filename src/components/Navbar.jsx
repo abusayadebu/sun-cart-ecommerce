@@ -99,13 +99,14 @@ const Navbar = () => {
               absolute left-1/2 -translate-x-1/2 top-20
               w-[95%] max-w-7xl
               rounded-2xl
-              bg-orange-400
+              bg-orange-200
               border border-white/20
               shadow-lg
               flex flex-col gap-4
               p-6
               hidden
               peer-checked:flex
+              font-semibold
             ">
               <Link href={"/"} className={`${
                 pathname === "/"
