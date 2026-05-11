@@ -7,6 +7,7 @@ import { authClient } from "@/lib/auth-client";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { GrGoogle } from "react-icons/gr";
 import Link from "next/link";
+import { toast, ToastContainer } from "react-toastify";
 
 const LoginPage = () => {
     const onSubmit = async(e) =>{
@@ -22,9 +23,14 @@ const LoginPage = () => {
           callbackURL: "/",
         })
 
-    // condition based HeroUI toast
-    
         console.log(data, error);
+    // condition based toast
+        if (error) {
+        toast.error(error.message || "Login failed");
+        return;
+      }
+
+      toast.success("Login successful");
 
     } 
 
@@ -127,7 +133,7 @@ const LoginPage = () => {
               </div>
           </Form>
     
-    
+            <ToastContainer position="top-center"></ToastContainer>
         </Card>
   );
 };

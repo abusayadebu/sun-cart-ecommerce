@@ -7,6 +7,7 @@ import { authClient } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
+import { toast, ToastContainer } from "react-toastify";
 
 const RegisterPage = () => {
     const router = useRouter()
@@ -27,11 +28,13 @@ const RegisterPage = () => {
           password,
         })
 
-    // condition based toast
-    if(!error){
-      router.push("/")
-    }
-
+     // condition based toast
+            if (error) {
+            toast.error(error.message || "Login failed");
+            return;
+          }
+    
+          toast.success("Login successful");
 
         console.log(data, error);
 
@@ -137,7 +140,7 @@ const RegisterPage = () => {
               </div>
       </Form>
 
-
+        <ToastContainer position="top-center"></ToastContainer>
     </Card>
   );
 };
