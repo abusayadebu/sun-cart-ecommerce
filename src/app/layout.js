@@ -6,7 +6,6 @@ import "animate.css";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { ToastProvider } from "@heroui/react";
 
 const MontserratFont = Montserrat({
 

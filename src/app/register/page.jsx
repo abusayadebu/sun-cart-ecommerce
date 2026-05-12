@@ -33,12 +33,11 @@ const RegisterPage = () => {
           router.push('/')
           toast.success("Welcome to SunCart");
         }
+        
             if (error) {
             toast.error(error.message || "Login failed");
             return;
           }
-
-        console.log(data, error);
 
     } 
 
