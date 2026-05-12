@@ -27,6 +27,7 @@ const Banner = () => {
       {/* Badge */}
             <span
             className="
+              animate__animated animate__slideInLeft
                 inline-flex
                 items-center
                 gap-2
@@ -46,11 +47,11 @@ const Banner = () => {
             </span>
 
           {/* Heading */}
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold leading-tight animate__animated animate__fadeInUp animate__slow">
             Summer Sale
           </h1>
 
-          <h2 className="text-5xl md:text-7xl font-extrabold text-orange-400 mt-2">
+          <h2 className="text-5xl md:text-7xl font-extrabold text-orange-400 mt-2 animate__animated animate__fadeIn animate__slower">
             50% OFF !
           </h2>
 

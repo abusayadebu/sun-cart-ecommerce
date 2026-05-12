@@ -1,7 +1,6 @@
 "use client";
 import { authClient } from '@/lib/auth-client';
-import { Avatar, Button, Card, Description, FieldError, Form, Input, Label, TextField } from '@heroui/react';
-import Link from 'next/link';
+import { Avatar, Button, Card, FieldError, Form, Input, Label, TextField } from '@heroui/react';
 import React from 'react';
 import { BiEdit } from 'react-icons/bi';
 import { FaArrowRightLong } from 'react-icons/fa6';
@@ -32,7 +31,7 @@ const UpdateProfilePage = () => {
 
     return (
         <div className="max-w-7xl mx-auto my-20">
-            <div className="max-w-7xl mx-auto mb-30">
+            <div className="max-w-7xl mx-auto">
                         <div className='max-w-96 mx-auto flex flex-col items-center mt-8'>
                             <Avatar size="lg">
                                     <Avatar.Image alt={user?.name} src={user?.image} 

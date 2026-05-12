@@ -7,7 +7,7 @@ const PopularProducts = async () => {
     const topProducts = products.slice(0, 3)
 
     return (
-        <div className="max-w-7xl mx-auto my-20">
+        <div className="max-w-7xl mx-auto my-20 animate__animated animate__zoomIn animate__slow">
             {/* Badge */}
                 <span
                 className="

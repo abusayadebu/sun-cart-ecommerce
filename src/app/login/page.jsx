@@ -42,7 +42,7 @@ const LoginPage = () => {
     }
 
   return (
-    <Card className="border mx-auto w-125 py-10 mb-20 mt-25">
+    <Card className="border mx-auto w-125 py-10 mb-20 mt-25 animate__animated animate__fadeIn animate__slower">
           <div className="mb-3">
             {/* badge */}
               <span

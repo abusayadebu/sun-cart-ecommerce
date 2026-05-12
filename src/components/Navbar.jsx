@@ -25,7 +25,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 flex justify-center">
+    <nav className="fixed top-0 left-0 w-full z-50 flex justify-center animate__animated animate__slideInDown animate__slow">
       
       <div className="w-full rounded-b-2xl px-6 backdrop-blur-2xl bg-white/10 border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
 

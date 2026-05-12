@@ -11,6 +11,7 @@ const AllProductsPage = async () => {
              {/* Badge */}
                             <span
                             className="
+                            animate__animated animate__slideInLeft
                                 inline-flex
                                 items-center
                                 gap-2
@@ -28,8 +29,8 @@ const AllProductsPage = async () => {
                             <FaArrowRightLong className="text-sm" />
                             Summer Collection 2026
                             </span>
-            <h2 className='text-4xl font-bold text-gray-900'>Summer Catalog</h2>
-            <p className='text-gray-500 w-full md:w-3/5 my-3 text-lg'>Experience the warmth of the Mediterranean with our hand-selected luxury goods. Each piece is crafted to elevate your leisure lifestyle.</p>
+            <h2 className='text-4xl font-bold text-gray-900 animate__animated animate__fadeIn animate__slow'>Summer Catalog</h2>
+            <p className='text-gray-500 w-full md:w-3/5 my-3 text-lg animate__animated animate__fadeIn animate__slower'>Experience the warmth of the Mediterranean with our hand-selected luxury goods. Each piece is crafted to elevate your leisure lifestyle.</p>
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-12'>
                 {
