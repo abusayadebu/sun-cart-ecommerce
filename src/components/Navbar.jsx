@@ -2,7 +2,7 @@
 import { authClient } from "@/lib/auth-client";
 import { Avatar, Button } from "@heroui/react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import {
   FaShoppingCart,
   FaSearch,
@@ -10,9 +10,11 @@ import {
   FaBars,
   FaTimes,
 } from "react-icons/fa";
+import { toast, ToastContainer } from "react-toastify";
 
 const Navbar = () => {
     const pathname = usePathname();
+    const router = useRouter()
 
   // catch the user
   const userData = authClient.useSession();
@@ -21,6 +23,10 @@ const Navbar = () => {
   // logout function
   const handleLogOut = async () =>{
     await authClient.signOut();
+    router.push('/')
+
+    toast.error("You are logged out")
+    
   }
 
 
@@ -133,6 +139,7 @@ const Navbar = () => {
 
         </div>
       </div>
+      <ToastContainer></ToastContainer>
     </nav>
   );
 };

@@ -39,6 +39,8 @@ const LoginPage = () => {
         const data = await authClient.signIn.social({
             provider: "google",
         });
+
+      toast.success("you are logged in")
     }
 
   return (

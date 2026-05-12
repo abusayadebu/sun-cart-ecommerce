@@ -29,12 +29,14 @@ const RegisterPage = () => {
         })
 
      // condition based toast
+        if(!error){
+          router.push('/')
+          toast.success("Welcome to SunCart");
+        }
             if (error) {
             toast.error(error.message || "Login failed");
             return;
           }
-    
-          toast.success("Login successful");
 
         console.log(data, error);
 
@@ -74,7 +76,7 @@ const RegisterPage = () => {
           <FieldError />
         </TextField>
 
-        <TextField isRequired name="image" type="text">
+        <TextField isRequired name="image" type="url">
           <Label className="text-lg">Image URL</Label>
           <Input placeholder="Image URL" />
           <FieldError />
